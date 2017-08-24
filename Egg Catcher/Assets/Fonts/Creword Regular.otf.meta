@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 92b5d7a303c217c43b62c3fb3965f43c
+timeCreated: 1503579071
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Creword
+  fontNames:
+  - Creword
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7c9d5fa17f095974fbff03418ae41bfa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

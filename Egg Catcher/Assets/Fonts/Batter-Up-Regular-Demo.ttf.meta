@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e0077b2c087e00542b403c56184acd1c
+timeCreated: 1503579071
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Batter Up Regular Demo
+  fontNames:
+  - Batter Up Regular Demo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

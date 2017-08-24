@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: fdb61ef8c268a6448b04d6c2329f7476
+timeCreated: 1503579071
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Old English Hearts
+  fontNames:
+  - Old English Hearts
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

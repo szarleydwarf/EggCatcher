@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2f1461f698ad26f4fb9358882597e699
+timeCreated: 1503579070
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Judges SC
+  fontNames:
+  - Judges SC
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
