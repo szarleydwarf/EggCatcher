@@ -40,7 +40,7 @@ public class flipMe : MonoBehaviour {
 	void FlipMeNow (int rotation, int position) {
 		facingRight = !facingRight;
 		transform.rotation = Quaternion.Euler (0, rotation, 0);
-		transform.position = new Vector2 (position, -0.2f);
+//		transform.position = new Vector2 (position, -0.2f);
 	}
 
 	Vector3 GetTouchClickPosition () {
