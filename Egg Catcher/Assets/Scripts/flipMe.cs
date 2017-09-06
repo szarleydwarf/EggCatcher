@@ -34,7 +34,11 @@ public class flipMe : MonoBehaviour {
 	void getLow (float position) {
 		isLow = !isLow;
 		anim.SetBool ("getLow", isLow);
-		Debug.Log("Get Low" + position);
+//		Debug.Log("Get Low" + position);
+	}
+
+	public bool getIsFacingRight(){
+		return facingRight;
 	}
 
 	void FlipMeNow (int rotation, int position) {
