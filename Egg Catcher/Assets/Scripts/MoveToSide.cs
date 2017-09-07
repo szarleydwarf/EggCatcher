@@ -11,6 +11,7 @@ public class MoveToSide : MonoBehaviour {
 
 	void Update () {
 //		bool isLow = anim.GetBool ("getLow");
+
 		if(player.GetComponent<flipMe> ().getIsFacingRight ()){
 			newPosition = new Vector2 (1, 0);
 			this.transform.position = Vector2.Lerp (this.transform.position, newPosition, Time.deltaTime*smooth);
