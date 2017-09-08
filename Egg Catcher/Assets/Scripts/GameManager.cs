@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	void Awake () {
 //		SO = GetComponent<SpawnObject> ();
 //		Instantiate((GameObject)Resources.Load("Prefabs/EnvGame"));
-//		Instantiate((GameObject)Resources.Load("Prefabs/PlayerGame"));
+		Instantiate((GameObject)Resources.Load("Prefabs/PlayerGame"));
 ////		Debug.Log ("Awake");
 //		Instantiate((GameObject)Resources.Load("Prefabs/ShacksGame"));
 //		for (int i = 0; i < lifes; i++) {
