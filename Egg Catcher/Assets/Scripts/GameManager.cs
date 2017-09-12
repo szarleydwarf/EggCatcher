@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-//	public GameObject Env;
 	public GameObject[] eggs;
 	public GameObject[] spPoints;
 
@@ -12,18 +12,13 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-//		SO = GetComponent<SpawnObject> ();
-//		Instantiate((GameObject)Resources.Load("Prefabs/EnvGame"));
-		Instantiate((GameObject)Resources.Load("Prefabs/PlayerGame"));
-////		Debug.Log ("Awake");
-//		Instantiate((GameObject)Resources.Load("Prefabs/ShacksGame"));
-//		for (int i = 0; i < lifes; i++) {
-//			GameObject egg = (GameObject)Resources.Load ("Prefabs/egg_life");
-//			egg.transform.position = new Vector2 (-5 + i, 4);
-//			Instantiate (egg);
-//		}
+		drawLifes ();
 	}
 
+	public void setLifes(int lifeNum){
+		lifes = lifeNum;
+		drawLifes ();
+	}
 
 	void Update() {
 		instantiateTimer -= Time.deltaTime;
@@ -35,6 +30,16 @@ public class GameManager : MonoBehaviour {
 			GameObject egg = eggs[randomNumber];
 			Instantiate (egg, spPos, Quaternion.identity);
 			instantiateTimer = 2f;
+		}
+
+	}
+
+	void drawLifes() {
+		Debug.Log ("Lifes "+lifes);
+		for (int i = 0; i < lifes; i++) {
+			GameObject egg = (GameObject)Resources.Load ("Prefabs/egg_life");
+			egg.transform.position = new Vector2 (-6.2f + (float)i, 4.75f);
+			Instantiate (egg);
 		}
 	}
 }
