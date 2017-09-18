@@ -13,21 +13,23 @@ public class flipMe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector2 tcp =  GetTouchClickPosition ();
+		if (GameObject.Find ("GameController").GetComponent<GameController> ().getIsPaused ()) {
+			Vector2 tcp = GetTouchClickPosition ();
 
-		if (tcp == Vector2.zero)
-			return;
+			if (tcp == Vector2.zero)
+				return;
 
-		if(tcp.x < 0 && !facingRight){
-			FlipMeNow (180, -3);
-		} else if(tcp.x >= 0 && facingRight){
-			FlipMeNow (0, 3);
-		}
+			if (tcp.x < 0 && !facingRight) {
+				FlipMeNow (180, -3);
+			} else if (tcp.x >= 0 && facingRight) {
+				FlipMeNow (0, 3);
+			}
 			
-		if(tcp.y< 0 && !isLow){
-			getLow (tcp.y);
-		}else if(tcp.y >= 0 && isLow){
-			getLow (tcp.y);
+			if (tcp.y < 0 && !isLow) {
+				getLow (tcp.y);
+			} else if (tcp.y >= 0 && isLow) {
+				getLow (tcp.y);
+			}
 		}
 	}
 

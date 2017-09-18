@@ -7,8 +7,10 @@ public class GameController : MonoBehaviour {
 	public GameObject[] eggs, lifesEggs;
 	public GameObject[] spPoints;
 
+
 	private int maxLifes = 10, currentLifes = 3;
 	private float instantiateTimer = 2f;
+	private bool isPaused = true;
 
 	// Use this for initialization
 	void Awake () {
@@ -20,6 +22,14 @@ public class GameController : MonoBehaviour {
 		currentLifes = lifeNum;
 	}
 
+	public bool getIsPaused(){
+		return isPaused;
+	}
+		
+	public void setIsPaused(bool change){
+		isPaused = change;
+	}
+
 	public int getMaxLifes () {
 		return maxLifes;
 	}
@@ -28,17 +38,18 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update() {
-		instantiateTimer -= Time.deltaTime;
-		if(instantiateTimer <= 0) {
-			int randomNumber = Random.Range (0, eggs.Length);
-			int randomSP = Random.Range (0, spPoints.Length);
+		if (isPaused) {
+			instantiateTimer -= Time.deltaTime;
+			if (instantiateTimer <= 0) {
+				int randomNumber = Random.Range (0, eggs.Length);
+				int randomSP = Random.Range (0, spPoints.Length);
 
-			Vector2 spPos = spPoints [randomSP].transform.position;
-			GameObject egg = eggs[randomNumber];
-			Instantiate (egg, spPos, Quaternion.identity);
-			instantiateTimer = 2f;
-		}
-
+				Vector2 spPos = spPoints [randomSP].transform.position;
+				GameObject egg = eggs [randomNumber];
+				Instantiate (egg, spPos, Quaternion.identity);
+				instantiateTimer = 2f;
+			}
+		} 
 	}
 
 	void instantiateLifes() {

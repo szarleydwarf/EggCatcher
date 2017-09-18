@@ -15,6 +15,7 @@ public class Settings : MonoBehaviour {
 	}
 
 	public void pauseGame(){
-		Debug.Log ("YOU just press me");
+		bool isPaused = GameObject.Find ("GameController").GetComponent<GameController> ().getIsPaused ();
+		GameObject.Find ("GameController").GetComponent<GameController> ().setIsPaused (!isPaused);
 	}
 }
