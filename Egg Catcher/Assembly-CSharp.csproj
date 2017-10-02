@@ -46,12 +46,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BackgroundAudioScript.cs" />
+     <Compile Include="Assets\Scripts\BtnClicked.cs" />
      <Compile Include="Assets\Scripts\DestroyOnContact.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GoLow.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MoveToSide.cs" />
      <Compile Include="Assets\Scripts\PlayIntro.cs" />
+     <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\SpawnObject.cs" />
      <Compile Include="Assets\Scripts\destroyAfterWhile.cs" />
